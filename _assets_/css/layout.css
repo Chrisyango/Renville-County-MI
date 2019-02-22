@@ -275,7 +275,7 @@ nav {float: right;}
 
 
 /* ----------------- #news ----------------- */
-#news {position: relative; top: 32px; padding: 64px 0 0 0;}
+#news {position: relative; margin-top: 32px; padding: 64px 0 0 0;}
 #news .container {width: 1200px;}
 #news .container>a {position: absolute; bottom: -68px; left: 50%; transform: translateX(-48%); font-size: 15px; font-weight: 700; line-height: 27px; text-transform: uppercase; text-decoration: none; color: #000; letter-spacing: 7.5px;}
 #news .container>a:after {content: '\f061'; font-family: 'FontAwesome', 'sans-serif'; margin-left: 6px;}
@@ -292,7 +292,26 @@ nav {float: right;}
 
 
 /* ----------------- #calendar ----------------- */
-#calendar {position: relative; top: 100px;}
+#calendar {position: relative; margin-top: 85px; padding: 94px 0 75px; background-color: rgba(14,23,37,0.8);}
+#calendar:before {content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background: url('../images/calendar.jpg') left bottom no-repeat; background-size: cover; z-index: -1;}
+#calendar .container>div {padding: 0 15px;}
+#calendar h2 {font-size: 39px; font-weight: 700; line-height: 27px; text-transform: uppercase; color: #fff; margin: 0 0 39px;}
+#calendar h2 span {font-size: 22px; font-weight: 400; font-style: italic; text-transform: capitalize; color: #b4dff7; display: block; margin-top: 7px;}
+
+#footer-whitespace {position: absolute; top: 0; left: 0; width: 100%;}
+
+
+/* ----------------- #footer ----------------- */
+footer {background-color: #2b456d; color: #fff; font-size: 13px; font-weight: 600; line-height: 23px; text-transform: capitalize;}
+footer a {color: #fff!important; text-decoration: none;}
+#revize-logo {font-size: 14px; text-transform: lowercase; font-family: 'Roboto', 'sans-serif'; font-weight: 700;}
+footer .container {padding: 37px 0 41px;}
+#footer-left {float: left;}
+#footer-right {float: right;}
+
+#footer-left a:before,
+#footer-right a:not(:first-child):before {content: '\2022'; margin-left: 3px; margin-right: 7px;}
+
 
 /* -----------------------------------------
 

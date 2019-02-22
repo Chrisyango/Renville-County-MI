@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="_assets_/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="_assets_/fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700|Roboto:700">
 	<link rel="stylesheet" href="_assets_/css/layout.css">
 
 	<link rel="shortcut icon" href="_assets_/images/favicon.ico">
@@ -221,19 +221,27 @@
 	</section><!-- /#news -->
 
 	<section id="calendar">
+		<img src="./_assets_/images/footer-whitespace.png" alt="Whitespace" id="footer-whitespace">
 		<div class="container">
-			<h2>upcoming events</h2>
-			<div id="calendar-container">
-				<img src="./_assets_/images/calendar.png" alt="Calendar Image">
-			</div><!-- /#calendar-container -->
+			<div class="col-md-offset-2">
+			<h2>calendar <span>upcoming events</span></h2>
+				<div id="calendar-container">
+					<img src="./_assets_/images/calendar.png" alt="Calendar Image">
+				</div><!-- /#calendar-container -->
+			</div><!-- /.col-md-offset-2 -->
 		</div><!-- /.container -->
 	</section><!-- /#calendar -->
 </main>
 
 <footer>
-	<div class="text-center">
-		<span>&copy; 2019 Renville County, MN</span> <a href="./">contact us</a> <span>Powered by <a href="https://www.revize.com/">revize.</a>, The Government Website Experts</span> <a href="./">login</a> 
-	</div><!-- /.text-center -->
+	<div class="container">
+		<div id="footer-left">
+			&copy; 2019 Renville County, MN <a href="./">contact us</a>
+		</div><!-- /#footer-left -->
+		<div id="footer-right">
+			Powered by <a href="https://www.revize.com/" id="revize-logo">revize.</a>, The Government Website Experts <a href="./">login</a> 
+		</div> <!-- /#footer-right -->
+	</div>
 </footer>
 
 <div class="alert alert-dismissible floating-alert fade in os-animation" data-os-animation="fadeInUpBig" data-os-animation-delay="2s" role="alert">

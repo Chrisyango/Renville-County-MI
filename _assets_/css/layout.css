@@ -95,21 +95,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:sans-serif;text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#2b456d;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:sans-serif;text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#2b456d}
 .button:active,
 a.button:active,
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
-.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#2b456d}
 button::-moz-focus-inner,
 input::-moz-focus-inner{border:0;padding:0}
 
@@ -247,7 +247,7 @@ nav {float: right;}
 
 
 /* ----------------- #quick-links ----------------- */
-#quick-link-wrapper {width: 1450px; margin: 0 auto; background-color: #2a456d; position: relative; bottom: 134px; left: 0; z-index: 51;}
+#quick-link-wrapper {width: 1450px; max-width: 100%; margin: 0 auto; background-color: #2a456d; position: relative; bottom: 134px; left: 0; z-index: 51;}
 #quick-link-wrapper .container {padding: 0;}
 
 #quick-links {position: relative;}
@@ -276,7 +276,7 @@ nav {float: right;}
 
 /* ----------------- #news ----------------- */
 #news {position: relative; margin-top: 32px; padding: 64px 0 0 0;}
-#news .container {width: 1200px;}
+#news .container {width: 1200px; max-width: 100%;}
 #news .container>a {position: absolute; bottom: -68px; left: 50%; transform: translateX(-48%); font-size: 15px; font-weight: 700; line-height: 27px; text-transform: uppercase; text-decoration: none; color: #000; letter-spacing: 7.5px;}
 #news .container>a:after {content: '\f061'; font-family: 'FontAwesome', 'sans-serif'; margin-left: 6px;}
 #news h2 {font-size: 39px; font-weight: 700; line-height: 27px; text-transform: uppercase; color: #478f4f; margin: 0;}
@@ -357,7 +357,8 @@ footer .container {padding: 37px 0 41px;}
 .btn-google:hover{border-color:#D34836}
 .btn-reddit:hover{border-color:#ff5700}
 .btn-lg{font-size:16px;padding:14px 30px;border:0;border-radius:3px}
-.floating-share-btn{position:fixed;z-index:99999;top:40%;right:0;height:50px;width:50px;border-radius:0;border:0;background:#F26A39!important;color:#fff!important;line-height:50px;padding:0;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn{position:fixed;z-index:99998;top:40%;right:0;line-height:1.8;border-radius:0;border:0;background:#2b456d!important;color:#fff!important;padding:10px;box-shadow:0 0 10px rgba(0,0,0,.3);text-align:center}
+.floating-share-btn span {display:block}
 
 /* -----------------------------------------
 
@@ -405,6 +406,8 @@ footer .container {padding: 37px 0 41px;}
 }
 
 @media only screen and (max-width:991px) {
+
+	.floating-share-btn {top: unset; bottom: 15%}
 
 	/* rz form tables - without page scope this targets editforms and makes
 	 * editing confusing
@@ -463,6 +466,7 @@ footer .container {padding: 37px 0 41px;}
 	.nav-wrap,
 	.sidebar,
 	#flyout-wrap,
+	.floating-share-btn,
 	.breadcrumbs
 	.e-notify{display:none!important}
 	a[href]:after{content:none!important}

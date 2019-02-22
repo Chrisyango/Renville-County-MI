@@ -226,11 +226,11 @@
 					margin: 15
 				},
 				500: {
-					items: newsLinkItems(3),
+					items: newsLinkItems(2),
 					margin: 35
 				},
 				1000: {
-					items: newsLinkItems(5),
+					items: newsLinkItems(3),
 					margin: 30
 				}
 			}

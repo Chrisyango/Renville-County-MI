@@ -222,7 +222,8 @@ body{overflow-x:hidden}
 #nav>li>ul li{display:inline-block;width:100%}
 #nav>li>ul li a{display:block}
 
-.logo {width: 373px; float: left; margin-left: 78px;}
+.logo {position: relative; z-index: 100; width: 373px; float: left; margin-left: 78px; border-radius: 0 0 2px 2px;}
+.logo img {border-radius: 0 0 2px 2px; box-shadow: 0 0 4px 1px rgba(0,0,0,0.2);}
 
 header ul {margin: 0; padding: 0;}
 nav {float: right;}
@@ -239,9 +240,39 @@ nav {float: right;}
 #search label {position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 #search button {position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background-color: #b4dff7; border-radius: 50%; font-size: 16px; color: #365585!important; padding: 0; width: 40px; line-height: 40px; text-align: center;}
 
+/* ----------------- #slider ----------------- */
+#slider {position: relative; top: -33px; height: 771px;}
 
+#hero-whitespace {position: absolute; left: 0; bottom: 0; width: 100%; z-index: 50;}
+
+
+/* ----------------- #quick-links ----------------- */
+#quick-link-wrapper {width: 1450px; margin: 0 auto; background-color: #2a456d; position: relative; bottom: 134px; left: 0; z-index: 51;}
+#quick-link-wrapper .container {padding: 0;}
+
+#quick-links {position: relative;}
+#quick-links:after {content: ''; position: absolute; top: 0; bottom: 0; right: 0; width: 1px; background-color: #2a456d;}
+#quick-links .owl-item {position: relative;}
+#quick-links .owl-item:after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 1px; height: 90px; background-color: #b4dff7; opacity: 0.2;}
+.quick-link {font-size: 16px; text-transform: uppercase; text-decoration: none; color: #fff!important; display: inline-block; padding: 44px 0 39px;}
+.quick-link-img {font-size: 36px; color: #b4dff7; float: left; margin-right: 15px;}
+.quick-link-title {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+#quick-links .owl-prev, #quick-links .owl-next {position: absolute; top: 50%; left: -71px; transform: translate(-50%, -52%); color: #fff; font-size: 24px;}
+#quick-links .owl-next {left: unset; right: -91px;}
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
+
+
+/* ----------------- #welcome ----------------- */
+#welcome {position: relative; top: 32px; height: 536px;}
+#welcome:before {content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background: url('../images/welcome-bg.jpg') left top no-repeat; background-size: cover; z-index: -1; opacity: 0.2;}
+
+#welcome-content {padding: 103px 41px 103px 70px;}
+#welcome h2 {font-size: 39px; line-height: 27px; font-weight: 700; text-transform: uppercase; color: #478f4f; margin: 20px 0 32px;}
+#welcome p {font-size: 15px; line-height: 23px;}
+#welcome img {margin: 20.5px 0 0 43px;}
+
 
 /* -----------------------------------------
 

@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="_assets_/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="_assets_/fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700">
 	<link rel="stylesheet" href="_assets_/css/layout.css">
 
 	<link rel="shortcut icon" href="_assets_/images/favicon.ico">
@@ -136,40 +136,54 @@
 
 <section id="slider">
 	<ul class="bxslider">
-		<li style="background: url('./_assets_/images/hero-freeform.jpg') center no-repeat;background-size: cover;"></li>
+		<li style="background: url('./_assets_/images/hero.jpg') center no-repeat;background-size: cover;"></li>
 	</ul><!-- /.bxslider -->
 
-	<div id="quick-links" class="owl-carousel">
-		<a href="./" class="quick-link">
-			<span class="fa fa-file"></span>
-			minutes & agendas
-		</a><!--/.quick-link-link-->
-		<a href="./" class="quick-link">
-			<span class="fa fa-map"></span>
-			gis maps
-		</a><!--/.quick-link-link-->
-		<a href="./" class="quick-link">
-			<span class="fa fa-university"></span>
-			departments
-		</a><!--/.quick-link-->
-		<a href="./" class="quick-link">
-			<span class="fa fa-question-circle"></span>
-			frequently asked questions
-		</a><!--/.quick-link-->
-		<a href="./" class="quick-link">
-			<span class="fa fa-bullhorn"></span>
-			report an issue
-		</a><!--/.quick-link-->
-	</div><!-- /#quick-links.owl-carousel -->
+	<div id="quick-link-wrapper">
+		<div class="container">
+			<div id="quick-links" class="owl-carousel">
+				<a href="./" class="quick-link">
+					<span class="quick-link-img fa fa-file"></span>
+					<span class="quick-link-title">minutes & agendas</span>
+				</a><!--/.quick-link-link-->
+				<a href="./" class="quick-link">
+					<span class="quick-link-img fa fa-map"></span>
+					<span class="quick-link-title">gis maps</span>
+				</a><!--/.quick-link-link-->
+				<a href="./" class="quick-link">
+					<span class="quick-link-img fa fa-university"></span>
+					<span class="quick-link-title">departments</span>
+				</a><!--/.quick-link-->
+				<a href="./" class="quick-link">
+					<span class="quick-link-img fa fa-question-circle"></span>
+					<span class="quick-link-title">frequently asked questions</span>
+				</a><!--/.quick-link-->
+				<a href="./" class="quick-link">
+					<span class="quick-link-img fa fa-bullhorn"></span>
+					<span class="quick-link-title">report an issue</span>
+				</a><!--/.quick-link-->
+			</div><!-- /#quick-links.owl-carousel -->
+		</div><!-- /.container -->
+	</div><!-- /#quick-link-wrapper -->
+	
+
+	<img src="./_assets_/images/hero-whitespace.png" alt="Whitespace" id="hero-whitespace">
 </section><!-- /#slider -->
 
 <main id="main">
 	<section id="welcome">
 		<div class="container">
-			<h2>welcome to renville</h2>
-			<p>
-				Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui.
-			</p>
+			<div class="row">
+				<div id="welcome-content" class="col-md-7">
+					<h2>welcome to renville</h2>
+					<p>
+						Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui.
+					</p>
+				</div><!-- /.col-md-7 -->
+				<div id="welcome-img" class="col-md-5">
+					<img src="./_assets_/images/welcome.png" alt="Minnesota State">
+				</div><!-- /.col-md-5 -->
+			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section><!-- /#welcome -->
 

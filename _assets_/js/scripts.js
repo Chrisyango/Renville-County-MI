@@ -292,6 +292,32 @@
 				}
 			}
 		});
+
+
+		let newsLinkCount = $('.news-link').length;
+		const newsLinkItems = function(num) {
+			return (newsLinkCount >= num ? num : newsLinkCount);
+		}
+		$("#news-links").owlCarousel({
+			loop: true,
+			responsiveClass: true,
+			nav: true,
+			navText: ['<i class="fa fa-chevron-circle-left"></i>', '<i class="fa fa-chevron-circle-right"></i>'],
+			responsive: {
+				0: {
+					items: newsLinkItems(1),
+					margin: 15
+				},
+				500: {
+					items: newsLinkItems(3),
+					margin: 35
+				},
+				1000: {
+					items: newsLinkItems(5),
+					margin: 30
+				}
+			}
+		});
 	}
 
 	// Preloader

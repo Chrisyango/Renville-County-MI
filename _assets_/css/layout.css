@@ -258,8 +258,8 @@ nav {float: right;}
 .quick-link-img {font-size: 36px; color: #b4dff7; float: left; margin-right: 15px;}
 .quick-link-title {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
-#quick-links .owl-prev, #quick-links .owl-next {position: absolute; top: 50%; left: -71px; transform: translate(-50%, -52%); color: #fff; font-size: 24px;}
-#quick-links .owl-next {left: unset; right: -91px;}
+#quick-links .owl-prev, #quick-links .owl-next {position: absolute; top: 50%; left: -81px; transform: translateY(-52%); color: #fff; font-size: 24px;}
+#quick-links .owl-next {left: unset; right: -81px;}
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 
@@ -273,6 +273,26 @@ nav {float: right;}
 #welcome p {font-size: 15px; line-height: 23px;}
 #welcome img {margin: 20.5px 0 0 43px;}
 
+
+/* ----------------- #news ----------------- */
+#news {position: relative; top: 32px; padding: 64px 0 0 0;}
+#news .container {width: 1200px;}
+#news .container>a {position: absolute; bottom: -68px; left: 50%; transform: translateX(-48%); font-size: 15px; font-weight: 700; line-height: 27px; text-transform: uppercase; text-decoration: none; color: #000; letter-spacing: 7.5px;}
+#news .container>a:after {content: '\f061'; font-family: 'FontAwesome', 'sans-serif'; margin-left: 6px;}
+#news h2 {font-size: 39px; font-weight: 700; line-height: 27px; text-transform: uppercase; color: #478f4f; margin: 0;}
+#news h2 span {font-size: 22px; font-weight: 400; font-style: italic; text-transform: capitalize; color: #90c277; display: block; margin-top: 7px;}
+#news-links {margin-top: 35px;}
+.news-link-img {position: relative; width: 100%; height: 425px; border-radius: 2px;}
+.news-content {position: absolute; bottom: 0; left: 0; background-image: linear-gradient(transparent, black); padding: 60px 5px 24px 40px; border-radius: 0 0 2px 2px;}
+.news-date {font-size: 13px; font-weight: 700; line-height: 27px; color: #b4dff7; text-transform: uppercase; display: inline-block; margin-bottom: -5px;}
+.news-title {font-size: 18px; font-weight: 700; line-height: 28px; color: #fff; text-transform: capitalize; margin: 0;}
+
+#news .owl-prev, #news .owl-next {position: absolute; top: 50%; left: -49px; transform: translateY(-50%); font-size: 40px;}
+#news .owl-next {left: unset; right: -49px;}
+
+
+/* ----------------- #calendar ----------------- */
+#calendar {position: relative; top: 100px;}
 
 /* -----------------------------------------
 

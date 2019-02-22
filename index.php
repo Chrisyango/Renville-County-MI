@@ -189,22 +189,31 @@
 
 	<section id="news">
 		<div class="container">
-			<h2>revent news <span>& announcements</span></h2>		
+			<h2>recent news <span>& announcements</span></h2>		
 			<div id="news-links" class="owl-carousel">
 				<a href="./" class="news-link">
-					<div style="background: url('./_assets_/images/news1.jpg') center no-repeat; background-size: cover;" class="news-link-img"></div>
-					<span class="news-date">jan. 10, 2019</span>
-					<h3 class="news-title">Post Title Condimentum Justo Tellus Amet Porta</h3>
+					<div style="background: url('./_assets_/images/news1.jpg') center no-repeat; background-size: cover;" class="news-link-img">
+						<div class="news-content">
+							<span class="news-date">jan. 10, 2019</span>
+							<h3 class="news-title">Post Title Condimentum Justo Tellus Amet Porta</h3>
+						</div>
+					</div>	
 				</a><!--/.news-link-->
 				<a href="./" class="news-link">
-					<div style="background: url('./_assets_/images/news2.jpg') center no-repeat; background-size: cover;" class="news-link-img"></div>
-					<span class="news-date">jan 16, 2019</span>
-					<h3 class="news-title">Ipsum Condimentum Bibendum Cursus Dapibus</h3>
+					<div style="background: url('./_assets_/images/news2.jpg') center no-repeat; background-size: cover;" class="news-link-img">
+						<div class="news-content">
+							<span class="news-date">jan 16, 2019</span>
+							<h3 class="news-title">Ipsum Condimentum Bibendum Cursus Dapibus</h3>
+						</div>
+					</div>	
 				</a><!--/.news-link-->
 				<a href="./" class="news-link">
-					<div style="background: url('./_assets_/images/news3.jpg') center no-repeat; background-size: cover;" class="news-link-img"></div>
-					<span class="news-date">jan 12, 2019</span>
-					<h3 class="news-title">Dapibus Malesuada Vestibulum Justo Porta</h3>
+					<div style="background: url('./_assets_/images/news3.jpg') center no-repeat; background-size: cover;" class="news-link-img">
+						<div class="news-content">
+							<span class="news-date">jan 12, 2019</span>
+							<h3 class="news-title">Dapibus Malesuada Vestibulum Justo Porta</h3>
+						</div>
+					</div>
 				</a><!--/.news-link-->
 			</div><!-- /#news-links.owl-carousel -->
 			<a href="./">see all news</a>

@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="_assets_/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="_assets_/fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i">
 	<link rel="stylesheet" href="_assets_/css/layout.css">
 
 	<link rel="shortcut icon" href="_assets_/images/favicon.ico">
@@ -35,15 +36,25 @@
 </head>
 <body id="homepage">
 
-<header>
+<header class="clearfix">
 	<div id="toggles" class="hidden-lg hidden-md">
 		<label for="search-input" id="search-toggle-mobile" class="fa fa-search"></label>
 		<div id="nav-toggle" class="fa fa-bars"></div>
 	</div><!-- /#toggles -->
+
 	<a href="./" class="logo">
 		<img src="./_assets_/images/logo.jpg" alt="Logo">
 	</a>
-	<nav class="container">
+
+	<div id="search">
+		<form class="search-form" method="get" action="search.php">
+			<label class="fa fa-search" for="search-input"></label>
+			<input name="q" class="form-control search-input" placeholder="I'm looking for..." type="search" id="search-input">
+			<button class="fa fa-search"></button>
+		</form><!-- /.search-form -->
+	</div><!-- /#search -->
+
+	<nav>
 		<ul id="nav">
 			<li><a href="./">home</a></li>
 			<li><a href="./">about us</a></li>
@@ -120,21 +131,8 @@
 			<li><a href="./">services</a></li>
 			<li><a href="./">how do i...</a></li>
 		</ul> <!-- /#nav -->
-	</nav><!-- /.container -->
-	<div id="search">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-md-offset-8">
-					<form class="search-form" method="get" action="search.php">
-						<label class="fa fa-search" for="search-input"></label>
-						<input name="q" class="form-control search-input" placeholder="I'm looking for..." type="search" id="search-input">
-						<button class="fa fa-search"></button>
-					</form><!-- /.search-form -->
-				</div><!-- /.col-md-4.col-md-offset-8 -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</div><!-- /#search -->
-</header><!-- /.clearfix -->
+	</nav>
+</header>
 
 <section id="slider">
 	<ul class="bxslider">

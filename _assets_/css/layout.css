@@ -13,7 +13,7 @@
 #basic styles
 
 -----------------------------------------*/
-body{background:#fff;font-size:14px;line-height:1.6;font-family:sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
+body{background:#fff;font-size:14px;line-height:1.6;font-family:'Open Sans', 'sans-serif';color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
 /* -----------------------------------------
 
@@ -35,19 +35,6 @@ em{font-style:italic}
 strong,b{font-weight:bold}
 small{font-size:80%}
 hr{border:solid #ccc;border-width:1px 0 0;clear:both;margin:10px 0 30px;height:0}
-
-@font-face{
-  font-family:'weather';
-  src:url('../fonts/weather/artill_clean_icons-webfont.eot');
-  src:url('../fonts/weather/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/weather/artill_clean_icons-webfont.woff') format('woff'),
-      url('../fonts/weather/artill_clean_icons-webfont.ttf') format('truetype'),
-      url('../fonts/weather/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
-  font-weight:normal;
-  font-style:normal;
-}
-.weather i{font-family:'weather'}
-.weather .icon-0:before{content:":"}.weather .icon-1:before{content:"p"}.weather .icon-2:before{content:"S"}.weather .icon-3:before{content:"Q"}.weather .icon-4:before{content:"S"}.weather .icon-5:before{content:"W"}.weather .icon-6:before{content:"W"}.weather .icon-7:before{content:"W"}.weather .icon-8:before{content:"W"}.weather .icon-9:before{content:"I"}.weather .icon-10:before{content:"W"}.weather .icon-11:before{content:"I"}.weather .icon-12:before{content:"I"}.weather .icon-13:before{content:"I"}.weather .icon-14:before{content:"I"}.weather .icon-15:before{content:"W"}.weather .icon-16:before{content:"I"}.weather .icon-17:before{content:"W"}.weather .icon-18:before{content:"U"}.weather .icon-19:before{content:"Z"}.weather .icon-20:before{content:"Z"}.weather .icon-21:before{content:"Z"}.weather .icon-22:before{content:"Z"}.weather .icon-23:before{content:"Z"}.weather .icon-24:before{content:"E"}.weather .icon-25:before{content:"E"}.weather .icon-26:before{content:"3"}.weather .icon-27:before{content:"a"}.weather .icon-28:before{content:"A"}.weather .icon-29:before{content:"a"}.weather .icon-30:before{content:"A"}.weather .icon-31:before{content:"6"}.weather .icon-32:before{content:"1"}.weather .icon-33:before{content:"6"}.weather .icon-34:before{content:"1"}.weather .icon-35:before{content:"W"}.weather .icon-36:before{content:"1"}.weather .icon-37:before{content:"S"}.weather .icon-38:before{content:"S"}.weather .icon-39:before{content:"S"}.weather .icon-40:before{content:"M"}.weather .icon-41:before{content:"W"}.weather .icon-42:before{content:"I"}.weather .icon-43:before{content:"W"}.weather .icon-44:before{content:"a"}.weather .icon-45:before{content:"S"}.weather .icon-46:before{content:"U"}.weather .icon-47:before{content:"S"}
 
 /* -----------------------------------------
 
@@ -221,9 +208,9 @@ body{overflow-x:hidden}
 .toggle,
 .toggle2{display:none}
 
-/* Don't forget to accout for span being used in space of a tag for nav items that are not links */
-/*for mega menu addjust as needed*/
-.nav>li>ul {
+
+/* ----------------- #nav ----------------- */
+#nav>li>ul {
     -moz-column-count: 4;
     -moz-column-gap: 40px;
     -webkit-column-count: 4;
@@ -232,9 +219,27 @@ body{overflow-x:hidden}
     column-gap: 40px;
     padding:40px
 }
-.nav>li>ul li{display:inline-block;width:100%}
-.nav>li>ul li a{display:block}
-/*for mega menu addjust as needed*/
+#nav>li>ul li{display:inline-block;width:100%}
+#nav>li>ul li a{display:block}
+
+.logo {width: 373px; float: left; margin-left: 78px;}
+
+header ul {margin: 0; padding: 0;}
+nav {float: right;}
+#nav {margin-right: 40px; font-size: 0;}
+#nav li {display: inline-block; margin: 0;}
+#nav li a,
+#nav li span {font-weight: 600; font-size: 16px; text-transform: uppercase; text-decoration: none; color: #2a446c; display: inline-block; padding: 30px 10.25px;}
+#nav ul {display: none;}
+
+#search {position: relative; float: right; width: 290px; background-color: #2c4771; padding: 23px 0;}
+.search-form {margin: 0;}
+#search input {width: 100%; background-color: transparent; border: none; padding: 0 70px 0 20px;}
+#search input::placeholder {font-weight: 600; font-style: italic; font-size: 16px; color: #ffffff; opacity: 0.7;}
+#search label {position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+#search button {position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background-color: #b4dff7; border-radius: 50%; font-size: 16px; color: #365585!important; padding: 0; width: 40px; line-height: 40px; text-align: center;}
+
+
 
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 

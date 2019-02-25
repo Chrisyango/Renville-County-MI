@@ -236,10 +236,10 @@
 <footer>
 	<div class="container">
 		<div id="footer-left">
-			&copy; 2019 Renville County, MN <a href="./">contact us</a>
+			<span>&copy; 2019 Renville County, MN</span> <a href="./">contact us</a>
 		</div><!-- /#footer-left -->
 		<div id="footer-right">
-			Powered by <a href="https://www.revize.com/" id="revize-logo">revize.</a>, The Government Website Experts <a href="./">login</a> 
+			<span>Powered by <a href="https://www.revize.com/" id="revize-logo">revize.</a>, The Government Website Experts</span> <a href="./">login</a> 
 		</div> <!-- /#footer-right -->
 	</div>
 </footer>

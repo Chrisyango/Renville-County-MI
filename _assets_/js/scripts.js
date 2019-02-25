@@ -54,7 +54,7 @@
 	}
 
 	// Search Toggle
-	$('#search-toggle').on('click',function(e){
+	$('#search-toggle-mobile').on('click',function(e){
 		$('#search').stop().slideToggle(200);
 		$(this).toggleClass('fa-search fa-close');
 	});

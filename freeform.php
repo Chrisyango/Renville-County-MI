@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>Renville County, MN</title>
+	<title>Renville County, MN - Freeform</title>
 	<meta name="description" content="">
 	<meta name="robots" content="index, follow">
 
@@ -220,14 +220,6 @@
 		</div> <!-- /#footer-right -->
 	</div>
 </footer>
-
-<div class="alert alert-dismissible floating-alert fade in os-animation" data-os-animation="fadeInUpBig" data-os-animation-delay="2s" role="alert">
-	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<h1>Alert Title 30 characters Max</h1>
-	<p>Max 120 characters Max 120 characters Max 120 characters Max 120 characters Max 120 characters Max 120 characters Max 120</p>
-	<p><a href="#" class="btn">Read More</a></p>
-</div><!-- /.alert -->
-
 
 <!-- Share widget make into an include file -->
 <button type="button" class="share-btn floating-share-btn" data-toggle="modal" data-target="#shareModal">

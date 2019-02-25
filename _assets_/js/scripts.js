@@ -197,13 +197,13 @@
 			responsive: {
 				0: {
 					items: quickLinkItems(1),
+					margin: 0
+				},
+				700: {
+					items: quickLinkItems(3),
 					margin: 15
 				},
-				500: {
-					items: quickLinkItems(3),
-					margin: 35
-				},
-				1000: {
+				1200: {
 					items: quickLinkItems(5),
 					margin: 30
 				}
@@ -225,9 +225,9 @@
 					items: newsLinkItems(1),
 					margin: 15
 				},
-				500: {
+				600: {
 					items: newsLinkItems(2),
-					margin: 35
+					margin: 25
 				},
 				1000: {
 					items: newsLinkItems(3),

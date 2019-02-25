@@ -203,6 +203,7 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 body{overflow-x:hidden}
+.container {width: 1200px; max-width: 100%;}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #nav-toggle,
 .toggle,
@@ -241,35 +242,32 @@ nav {float: right;}
 
 /* ----------------- #quick-links ----------------- */
 #quick-link-wrapper {width: 1450px; max-width: 100%; margin: 0 auto; background-color: #2a456d; position: relative; bottom: 134px; left: 0; z-index: 51;}
-#quick-link-wrapper .container {padding: 0;}
+#quick-link-wrapper .container {padding: 0; max-width: calc(100% - 250px);}
 
 #quick-links {position: relative;}
 #quick-links:after {content: ''; position: absolute; top: 0; bottom: 0; right: 0; width: 1px; background-color: #2a456d;}
 #quick-links .owl-item {position: relative;}
 #quick-links .owl-item:after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 1px; height: 90px; background-color: #b4dff7; opacity: 0.2;}
-.quick-link {font-size: 16px; text-transform: uppercase; text-decoration: none; color: #fff!important; display: inline-block; padding: 44px 0 39px;}
-.quick-link-img {font-size: 36px; color: #b4dff7; float: left; margin-right: 15px;}
+.quick-link {font-size: 16px; text-transform: uppercase; text-decoration: none; color: #fff!important; display: inline-block; padding: 44px 0; width: 100%;}
+.quick-link-img {font-size: 36px; color: #b4dff7;margin-right: 15px;}
 .quick-link-title {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
 #quick-links .owl-prev, #quick-links .owl-next {position: absolute; top: 50%; left: -81px; transform: translateY(-52%); color: #fff; font-size: 24px;}
 #quick-links .owl-next {left: unset; right: -81px;}
-
-#calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 
 
 /* ----------------- #welcome ----------------- */
 #welcome {position: relative; top: 32px; height: 536px;}
 #welcome:before {content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background: url('../images/welcome-bg.jpg') left top no-repeat; background-size: cover; z-index: -1; opacity: 0.2;}
 
-#welcome-content {padding: 103px 41px 103px 70px;}
+#welcome-content {padding: 103px 45px 103px 85px;}
 #welcome h2 {font-size: 39px; line-height: 27px; font-weight: 700; text-transform: uppercase; color: #478f4f; margin: 20px 0 32px;}
 #welcome p {font-size: 15px; line-height: 23px;}
-#welcome img {margin: 20.5px 0 0 43px;}
+#welcome img {margin: 20.5px 0 0 41px;}
 
 
 /* ----------------- #news ----------------- */
-#news {position: relative; margin-top: 32px; padding: 64px 0 0 0;}
-#news .container {width: 1200px; max-width: 100%;}
+#news {position: relative; margin-top: 32px; padding: 64px 50px;}
 #news .container>a {position: absolute; bottom: -68px; left: 50%; transform: translateX(-48%); font-size: 15px; font-weight: 700; line-height: 27px; text-transform: uppercase; text-decoration: none; color: #000; letter-spacing: 7.5px;}
 #news .container>a:after {content: '\f061'; font-family: 'FontAwesome', 'sans-serif'; margin-left: 6px;}
 #news h2 {font-size: 39px; font-weight: 700; line-height: 27px; text-transform: uppercase; color: #478f4f; margin: 0;}
@@ -287,18 +285,20 @@ nav {float: right;}
 /* ----------------- #calendar ----------------- */
 #calendar {position: relative; margin-top: 85px; padding: 94px 0 75px; background-color: rgba(14,23,37,0.8);}
 #calendar:before {content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background: url('../images/calendar.jpg') left bottom no-repeat; background-size: cover; z-index: -1;}
-#calendar .container>div {padding: 0 15px;}
+#calendar .container>div {padding: 0 25px;}
 #calendar h2 {font-size: 39px; font-weight: 700; line-height: 27px; text-transform: uppercase; color: #fff; margin: 0 0 39px;}
 #calendar h2 span {font-size: 22px; font-weight: 400; font-style: italic; text-transform: capitalize; color: #b4dff7; display: block; margin-top: 7px;}
 
 #footer-whitespace {position: absolute; top: 0; left: 0; width: 100%;}
+
+#calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 
 
 /* ----------------- #footer ----------------- */
 footer {background-color: #2b456d; color: #fff; font-size: 13px; font-weight: 600; line-height: 23px; text-transform: capitalize;}
 footer a {color: #fff!important; text-decoration: none;}
 #revize-logo {font-size: 14px; text-transform: lowercase; font-family: 'Roboto', 'sans-serif'; font-weight: 700;}
-footer .container {padding: 37px 0 41px;}
+footer .container {padding: 37px 15px 41px;}
 #footer-left {float: left;}
 #footer-right {float: right;}
 
@@ -444,6 +444,7 @@ footer .container {padding: 37px 0 41px;}
 	#freeform #formwizziwmorf tr table tr{display:table-row!important}
 	#freeform #formwizziwmorf tr table td{display:table-cell!important}
 
+	/* ----------------- #nav ----------------- */
 	nav {float: left; width: 100%;}
 	#nav {margin-right: 0;}
 	#search {display: none; padding: 13px 0;}
@@ -479,6 +480,29 @@ footer .container {padding: 37px 0 41px;}
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
 
+	/* ----------------- #slider ----------------- */
+	#slider {height: 600px;}
+
+	/* ----------------- #quick-links ----------------- */
+	#quick-link-wrapper {bottom: 101px;}
+	.quick-link {font-size: 14px; padding: 35px 0;}
+	.quick-link-img {font-size: 30px;}
+
+	/* ----------------- #welcome ----------------- */
+	#welcome {height: auto;}
+	#welcome-img {display: none;}
+	#welcome h2 {font-size: 34px; line-height: 34px; margin: 20px 0;}
+	#welcome p {font-size: 14px;}
+
+	/* ----------------- #news ----------------- */
+	#news h2 {font-size: 34px;}
+	#news h2 span {font-size: 20px;}
+	.news-title {font-size: 16px;}
+
+	/* ----------------- #calendar ----------------- */
+	#calendar h2 {font-size: 34px;}
+	#calendar h2 span {font-size: 20px;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -490,6 +514,18 @@ footer .container {padding: 37px 0 41px;}
 	.floating-alert .btn{font-size:10px;padding:7px 12px!important}
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}
+
+	/* ----------------- #welcome ----------------- */
+	#welcome {height: auto;}
+	#welcome-img {display: none;}
+
+	/* ----------------- #news h2 ----------------- */
+	#news .container>a {bottom: -30px;}
+	.news-link-img {height: 370px;}
+
+	/* ----------------- #footer ----------------- */
+	#footer-left,
+	#footer-right {float: none;}
 
 }
 

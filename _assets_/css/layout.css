@@ -302,9 +302,9 @@ footer .container {padding:37px 15px 41px}
 #flyout li{margin:0;display:block;position:relative}
 #flyout a,
 #flyout span{text-decoration:none;padding:0px 30px;display:block;text-transform:capitalize;line-height:28px;font-size:13px;color:#333}
-#flyout ul{display:none;position:absolute;top:0;left:100%;margin:0;padding:0;background:#50baea;z-index:100}
+#flyout ul{display:none;position:absolute;top:0;left:100%;margin:0;padding:0;background:#2a446c;z-index:100}
 #flyout ul a,
-#flyout ul span{font-size:13px;padding:10px 15px;width:180px}
+#flyout ul span{font-size:13px;padding:10px 15px;width:180px;color:#fff;}
 #flyout li:hover > ul{display:block}
 #flyout #flyout-header {font-size:18px;font-weight:700;line-height:23px;text-transform:uppercase;color:#2a446c;margin:0 0 11px;padding:0 30px}
 
@@ -492,16 +492,16 @@ footer .container {padding:37px 15px 41px}
 	#flyout i {position:absolute;right:15px;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center;font-size:24px}
 	#nav li li:hover > a{background:none;color:#fff}
 
-	#flyout{display:none;padding-bottom:0}
+	#flyout{display:none;padding-bottom:0;background-color:#2a446c}
 	#flyout li a,
-	#flyout li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
+	#flyout li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px;color:#fff}
 	#flyout ul{position:static;left:0;padding:0;background:rgba(0,0,0,.2)}
 	#flyout ul a,
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
 	#flyout-toggle {margin:30px 0;font-size:18px}
 	#flyout i {right:0}
-	#flyout #flyout-header {padding:0 15px}
+	#flyout #flyout-header {padding:0 15px;color:#fff}
 
 	#entry {margin-top:30px}
 

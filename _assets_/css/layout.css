@@ -181,24 +181,6 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 /* -----------------------------------------
 
-#loader
-
------------------------------------------*/
-#loader-wrapper{position:fixed;top:0;right:0;bottom:0;left:0;background:#233447;z-index:99999;display:none!important}
-#loader-wrapper img{width:60px;position:absolute;top:50%;left:50%;margin:-30px 0 0 -30px;animation:2s cubic-bezier(0.63, 0.045, 0.34, 1) 0s normal none infinite spinning_animation;-webkit-animation:2s cubic-bezier(0.63, 0.045, 0.34, 1) 0s normal none infinite spinning_animation}
-@keyframes spinning_animation {
-	0%{transform:scale(1) rotate(0deg);-o-transform:scale(1) rotate(0deg)}
-	50%{transform:scale(0.8) rotate(360deg);-o-transform:scale(0.8) rotate(360deg)}
-	100%{transform:scale(1) rotate(720deg);-o-transform:scale(1) rotate(720deg)}
-}
-@-webkit-keyframes spinning_animation {
-	0%{-webkit-transform:scale(1) rotate(0deg)}
-	50%{-webkit-transform:scale(0.8) rotate(360deg)}
-	100%{-webkit-transform:scale(1) rotate(720deg)}
-}
-
-/* -----------------------------------------
-
 #main
 
 -----------------------------------------*/
@@ -229,10 +211,11 @@ nav {float: right;}
 
 #search {position: relative; float: right; width: 290px; background-color: #2c4771; padding: 23px 0;}
 .search-form {margin: 0;}
-#search input {width: 100%; background-color: transparent; border: none; padding: 0 70px 0 20px;}
-#search input::placeholder {font-weight: 600; font-style: italic; font-size: 16px; color: #ffffff; opacity: 0.7;}
+#search input {width: 100%; background-color: transparent; border: none; padding: 0 70px 0 20px; color: #ffffff; opacity: 0.7; font-size: 16px;}
+#search input::placeholder {font-weight: 600; font-style: italic; font-size: 16px; color: #ffffff;}
 #search label {position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 #search button {position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background-color: #b4dff7; border-radius: 50%; font-size: 16px; color: #365585!important; padding: 0; width: 40px; line-height: 40px; text-align: center;}
+#search button:before {font-weight: 400;}
 
 /* ----------------- #slider ----------------- */
 #slider {position: relative; top: -33px; height: 771px;}
@@ -267,7 +250,7 @@ nav {float: right;}
 
 
 /* ----------------- #news ----------------- */
-#news {position: relative; margin-top: 32px; padding: 64px 50px;}
+#news {position: relative; margin-top: 32px; padding: 64px 50px 0;}
 #news .container>a {position: absolute; bottom: -68px; left: 50%; transform: translateX(-48%); font-size: 15px; font-weight: 700; line-height: 27px; text-transform: uppercase; text-decoration: none; color: #000; letter-spacing: 7.5px;}
 #news .container>a:after {content: '\f061'; font-family: 'FontAwesome', 'sans-serif'; margin-left: 6px;}
 #news h2 {font-size: 39px; font-weight: 700; line-height: 27px; text-transform: uppercase; color: #478f4f; margin: 0;}
@@ -469,8 +452,8 @@ footer .container {padding: 37px 15px 41px;}
 
 	/* ----------------- #nav ----------------- */
 	nav {float: left; width: 100%;}
-	#nav {margin-right: 0;}
-	#search {display: none; padding: 13px 0;}
+	#nav {margin-right: 0; background-color: #2a456d;}
+	#search {display: none; padding: 13px 0; float: left; width: 100%;}
 
 	#toggles {position: absolute; top: 15px; right: 15px;}
 	#search-toggle-mobile,
@@ -484,7 +467,7 @@ footer .container {padding: 37px 15px 41px;}
 	#nav{display:none}
 	#nav li{float:none;display:block}
 	#nav li a,
-	#nav li span{position: relative; width: 100%; padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
+	#nav li span{position: relative; width: 100%; padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px; color: #fff;}
 	#nav ul{position:static;top:0;padding:0;background:rgba(0,0,0,.2)}
 	#nav li:hover > ul{display:none}
 	#nav ul a,
@@ -495,7 +478,7 @@ footer .container {padding: 37px 15px 41px;}
 	#flyout i {position:absolute;right:15px;top:0;background:rgba(0,0,0,.2);height:45px;width:45px;line-height:45px;text-align:center;font-size:24px;}
 	#nav li li:hover > a{background:none;color:#fff}
 
-	#flyout{display:none; padding-bottom: 0; margin-bottom: 30px;}
+	#flyout{display:none; padding-bottom: 0;}
 	#flyout li a,
 	#flyout li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
 	#flyout ul{position:static;left:0;padding:0;background:rgba(0,0,0,.2)}
@@ -505,6 +488,8 @@ footer .container {padding: 37px 15px 41px;}
 	#flyout-toggle {margin: 30px 0; font-size: 18px;}
 	#flyout i {right: 0;}
 	#flyout #flyout-header {padding: 0 15px;}
+
+	#entry {margin-top: 30px;}
 
 	/* ----------------- #slider ----------------- */
 	#slider {height: 600px;}
@@ -516,18 +501,21 @@ footer .container {padding: 37px 15px 41px;}
 
 	/* ----------------- #welcome ----------------- */
 	#welcome {height: auto;}
+	#welcome-content {padding: 103px 15px;}
 	#welcome-img {display: none;}
 	#welcome h2 {font-size: 34px; line-height: 34px; margin: 20px 0;}
 	#welcome p {font-size: 14px;}
 
 	/* ----------------- #news ----------------- */
-	#news h2 {font-size: 34px;}
+	#news {padding: 64px 50px 0;}
+	#news h2 {font-size: 34px; margin-left: -50px;}
 	#news h2 span {font-size: 20px;}
 	.news-title {font-size: 16px;}
 
 	/* ----------------- #calendar ----------------- */
 	#calendar h2 {font-size: 34px;}
 	#calendar h2 span {font-size: 20px;}
+	#calendar .container>div {padding: 0px;}
 
 }
 

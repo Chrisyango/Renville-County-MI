@@ -165,7 +165,7 @@
 							<li><a href="./">lorem fusce ultricies porta</a></li>
 							<li><a href="./">euismod mollis vulputate</a></li>
 							<li><a href="./">sollicitudin justo cursus</a></li>
-							<li><a href="./">cenenatis elit justo ligula</a></li>
+							<li><a href="./">venenatis elit justo ligula</a></li>
 						</ul><!-- /#flyout -->
 					</div><!-- /#flyout-wrap -->
 				</aside><!-- /#side-content -->
